@@ -1,0 +1,6 @@
+/.yarn/*
+/.next/*
+/build/*
+/out/*
+.pnp.js
+compress-stuff.js

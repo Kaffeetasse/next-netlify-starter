@@ -1,0 +1,54 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "airbnb/hooks", "prettier", "prettier/react", "plugin:import/errors"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/forbid-prop-types": [0, { "forbid": ["any"] }],
+    "react/prop-types": 0,
+    "react/destructuring-assignment": 0,
+    "react/sort-comp": 0,
+    "react/no-did-update-set-state": 0,
+    "react/jsx-boolean-value": 0,
+    "prefer-template": 1,
+    "prefer-const": 1,
+    "no-unused-vars": 1,
+    "no-restricted-syntax": 0,
+    "import/prefer-default-export": 1,
+    "import/no-extraneous-dependencies": 1,
+    "import/no-unresolved": ["error", { "ignore": ["^@"] }],
+    "react/jsx-props-no-spreading": [
+      1,
+      {
+        "html": "ignore",
+        "custom": "ignore",
+        "explicitSpread": "ignore",
+        "exceptions": [""]
+      }
+    ]
+  }
+}

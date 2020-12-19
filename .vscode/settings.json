@@ -1,0 +1,14 @@
+{
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/node_modules": true,
+    ".eslintcache": true
+  },
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.next": true,
+    "**/.pnp.*": true
+  },
+  "eslint.nodePath": ".yarn/sdks",
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.js"
+}
